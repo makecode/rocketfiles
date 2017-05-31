@@ -1,0 +1,24 @@
+.nav
+  margin-left: 30px
+  margin-right: 13px
+  +h700
+
+  &__list
+    display: flex
+
+  &__el
+    margin-right: 10px
+    cursor: pointer
+
+    &:hover
+      background-color: $bgBlueMenu
+
+      .drop-down
+        display: flex
+
+  &__link,
+  &__link:visited
+    padding: 21px 13px
+    color: #fff
+    font-size: 15px
+    text-transform: uppercase

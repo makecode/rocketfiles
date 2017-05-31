@@ -1,0 +1,65 @@
+.language-wrap
+  margin-left: 14px
+  position: relative
+  width: 60px
+  height: 36px
+  cursor: pointer
+
+.language
+  position: absolute
+  top: 0
+  right: 0
+  display: inline-flex
+  flex-direction: column
+  width: 60px
+  height: 35px
+  line-height: 35px
+  overflow: hidden
+  z-index: 10
+
+  &.is-open
+    height: auto
+
+  &__el
+    border: 1px solid #e3e3e3
+    color: $textGreyDark
+    padding-left: 10px
+    display: flex
+    flex: 1
+    background-color: white
+    order: 2
+    min-height: 35px
+    text-transform: uppercase
+    transition: all .3s ease
+    border-top: none
+    border-bottom: none
+
+    &:first-child
+      border-top: 1px solid #e3e3e3
+
+    &:last-child
+      border-bottom: 1px solid #e3e3e3
+
+    &:hover
+      background-color: #079eeb
+
+    &.is-active
+      order: 1
+      border: 1px solid #fff
+      background-color: transparent
+      
+      &:hover
+        background-color: transparent
+
+      .language__link
+        color: #fff
+
+  &__link
+    color: $textGreyDark
+
+  &__ico
+    position: absolute
+    top: 16px
+    right: 9px
+    z-index: 11
+
