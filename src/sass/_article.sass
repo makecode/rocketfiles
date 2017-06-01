@@ -3,13 +3,15 @@
   display: flex
   border-bottom: 1px solid #eaeaea
   cursor: pointer
-  transition: all .3s ease
+  transition: $general-transition
 
   &:hover
-    .article__title
+    text-decoration: none
+    .article__title,
+    .article__descr
       color: $textBlue
 
-  &__left
+  &__img
     margin-right: 15px
 
   &__title
@@ -17,7 +19,8 @@
     font-size: 16px
     +h700
 
-  &__descr
+  &__descr,
+  &__subtitle
     font-size: 13px
     color: $textGreyDark
     +h300

@@ -9,7 +9,7 @@
     height: 14px
     border: 2px solid #0091db
     border-radius: 50%
-    transition: all .3s ease-in-out
+    transition: $general-transition
 
     &::after
       position: absolute
@@ -20,7 +20,7 @@
       height: 2px
       background-color: #0091db
       transform: rotate(45deg)
-      transition: all .3s ease-in-out
+      transition: $general-transition
 
   &.is-arrow-down
     background: url("../img/ico-arrow-down.png")
@@ -56,6 +56,10 @@
     background: url("../img/ico-social.png")
     width: 21px
     height: 18px
+    transition: $general-transition
+
+    &:hover
+      background: url("../img/ico-social-blue.png")
 
   &.is-arrow
     background: url("../img/ico-arrow.png")

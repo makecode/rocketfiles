@@ -1,3 +1,11 @@
+$language-el-border-color: #E3E3E3
+$language-el-color: #434A4C
+$language-el-bg-color: #FFFFFF
+
+$language-link-color: #434A4C
+$language-link-hovered-color: #FFFFFF
+
+
 .language-wrap
   margin-left: 14px
   position: relative
@@ -21,41 +29,48 @@
     height: auto
 
   &__el
-    border: 1px solid #e3e3e3
-    color: $textGreyDark
+    border: 1px solid $language-el-border-color
+    color: $language-el-color
     padding-left: 10px
     display: flex
     flex: 1
-    background-color: white
+    background-color: $language-el-bg-color
     order: 2
     min-height: 35px
     text-transform: uppercase
-    transition: all .3s ease
+    transition: $general-transition
     border-top: none
     border-bottom: none
 
     &:first-child
-      border-top: 1px solid #e3e3e3
+      border-top: 1px solid $language-el-border-color
 
     &:last-child
-      border-bottom: 1px solid #e3e3e3
+      border-bottom: 1px solid $language-el-border-color
 
     &:hover
-      background-color: #079eeb
+      background-color: #079EEB
+
+      .language__link
+        color: $language-link-hovered-color
 
     &.is-active
       order: 1
-      border: 1px solid #fff
+      border: 1px solid #FFFFFF
       background-color: transparent
       
       &:hover
         background-color: transparent
 
       .language__link
-        color: #fff
+        color: $language-link-hovered-color
 
   &__link
-    color: $textGreyDark
+    color: $language-link-color
+
+    &:hover
+      color: $language-link-hovered-color
+      text-decoration: none
 
   &__ico
     position: absolute

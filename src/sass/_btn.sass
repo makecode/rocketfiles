@@ -6,20 +6,22 @@
   color: #079eeb
   border: 1px solid #079eeb
   background-color: transparent
-  transition: all .3s ease
+  transition: $general-transition
 
   &:hover
     background-color: #079eeb
     color: white
+    text-decoration: none
 
 .btn-green
   display: flex
   color: white
   height: 70px
   line-height: 70px
-  transition: all .3s ease
+  transition: $general-transition
 
   &:hover
+    text-decoration: none
     .btn-green__left
       background-color: #42ad49
 
@@ -47,7 +49,7 @@
       +h700
 
     &:last-child
-      font-size: 12px
+      font-size: 11px
       +h300
 
 .btn-scroll
