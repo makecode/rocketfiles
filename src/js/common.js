@@ -32,13 +32,6 @@ $(document).ready(function() {
     }
   });
 
-  $socialLikes.socialLikes({
-    url: 'https://github.com/sapegin/social-likes/',
-    title: 'social likes',
-    counters: true,
-    singleTitle: 'Share it!'
-  });
-
   var tabsSwitcher = function(tabsArray, contentArray) {
     tabsArray.map(function (i, el) {
       $(el).click(function () {
