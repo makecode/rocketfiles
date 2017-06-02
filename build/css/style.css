@@ -310,7 +310,7 @@ img { display: inline-block; }
 .info .info-text { padding-top: 17px; padding-bottom: 10px; text-align: justify; }
 
 .item { width: 262px; border: 1px solid #eaeaea; cursor: pointer; color: #434a4c; }
-.item:hover { border: 1px solid #008ad1; }
+.item:hover { border: 1px solid #008ad1; text-decoration: none; }
 .item__title, .item__descr { padding-left: 15px; padding-right: 30px; }
 .item__title { padding-top: 5px; padding-bottom: 3px; font-size: 16px; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
 .item__descr { padding-bottom: 15px; font-size: 13px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
