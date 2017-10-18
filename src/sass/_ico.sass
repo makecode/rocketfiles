@@ -3,11 +3,12 @@
   vertical-align: middle
   position: relative
 
-  &.is-search
+  &.is-search,
+  &.is-search-general
     margin: 0 3px 3px 0
     width: 14px
     height: 14px
-    border: 2px solid #0091db
+    border: 2px solid
     border-radius: 50%
     transition: $general-transition
 
@@ -18,9 +19,20 @@
       bottom: -2px
       width: 7px
       height: 2px
-      background-color: #0091db
       transform: rotate(45deg)
       transition: $general-transition
+
+  &.is-search
+    border-color: #0091db
+
+    &::after
+      background-color: #0091db
+
+  &.is-search-general
+    border-color: $textGreyDark
+
+    &::after
+      background-color: $textGreyDark
 
   &.is-arrow-down
     background: url("../img/ico-arrow-down.png")

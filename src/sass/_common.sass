@@ -46,6 +46,8 @@ h3
 	+h700
 
 body
+	display: flex
+	flex-direction: column
 	min-width: 1060px
 	font-size: 13px
 	line-height: 1.4
@@ -63,6 +65,10 @@ a
 
 img
 	display: inline-block
+	width: 100%
+
+.i-mb-22
+	margin-bottom: 22px
 	
 // common blocks
 
@@ -124,3 +130,68 @@ img
 
 	&__text
 		margin: 0 7px 5px 0
+
+.block-info
+	width: 560px
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0 auto
+
+.programs
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	flex-wrap: wrap
+
+	&__el
+		margin-right: 30px
+		margin-bottom: 30px
+
+		&:nth-child(8)
+			margin-right: 0
+
+		&:last-child
+			margin-right: 0
+
+	&__link
+		width: 42px
+		height: 42px
+
+.download
+	width: 571px
+	margin: 0 auto
+	text-align: center
+
+	&__name
+		font-size: 28px
+		line-height: .8
+		+h700
+
+	&__descr
+		margin-top: 20px
+		margin-bottom: 58px
+		font-size: 14px
+		+h300
+
+	&__img
+		max-width: 320px
+
+.error
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 550px
+	margin: 0 auto
+	color: #FFF
+
+	&__name
+		font-size: 100px
+		line-height: .8
+		margin-bottom: 15px
+
+	&__descr
+		margin-bottom: 35px
+		font-size: 22px
+		+h300
+
