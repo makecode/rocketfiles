@@ -351,10 +351,10 @@ img { display: inline-block; width: 100%; }
 
 .block-info { width: 560px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0 auto; }
 
-.article { padding: 13px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #eaeaea; cursor: pointer; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.article { padding: 13px 0; border-bottom: 1px solid #eaeaea; cursor: pointer; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .article:hover { text-decoration: none; }
 .article:hover .article__title, .article:hover .article__descr { color: #0091de; }
-.article__img { width: 90px; margin-right: 14px; }
+.article__left { width: 90px; min-width: 90px; margin-right: 14px; }
 .article__title { color: #434a4c; font-size: 16px; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
 .article__descr, .article__subtitle { font-size: 13px; color: #434a4c; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 .article__more { margin-top: 11px; text-align: center; }
@@ -469,7 +469,7 @@ img { display: inline-block; width: 100%; }
 .information h1 { margin-bottom: 16px; }
 .information .i-mb-22 { margin-bottom: 22px; }
 
-.item { width: 262px; border: 1px solid #eaeaea; cursor: pointer; color: #434a4c; }
+.item { display: inline-block; width: 262px; border: 1px solid #eaeaea; cursor: pointer; color: #434a4c; }
 .item:hover { border: 1px solid #008ad1; text-decoration: none; }
 .item__title, .item__descr { padding-left: 15px; padding-right: 30px; }
 .item__title { padding-top: 5px; padding-bottom: 3px; font-size: 16px; font-family: "roboto-bold", Helvetica, Arial, sans-serif; }
@@ -477,7 +477,7 @@ img { display: inline-block; width: 100%; }
 
 .items { background-color: #fff; }
 .items__list { padding: 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
-.items__el { padding-right: 15px; }
+.items__el { padding-right: 15px; list-style: none; }
 .items__el:last-child { padding-right: 0; }
 
 .language-wrap { margin-left: 14px; position: relative; width: 60px; height: 36px; cursor: pointer; }
@@ -519,7 +519,7 @@ img { display: inline-block; width: 100%; }
 .list.is-tabs .list { margin: 7px 0; }
 .list.is-tabs .list__el { padding-bottom: 0; }
 .list.is-tabs .article { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-.list.is-tabs .article__img { width: 40px; }
+.list.is-tabs .article__left { width: 40px; min-width: 40px; }
 .list.is-mark .list__el { position: relative; padding-left: 12px; padding-bottom: 2px; font-size: 14px; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 .list.is-mark .list__el:after { position: absolute; top: 8px; left: 0; content: ""; width: 3px; height: 3px; border-radius: 50%; background-color: #434a4c; }
 
@@ -555,8 +555,8 @@ img { display: inline-block; width: 100%; }
 .product__rating { padding-top: 6px; letter-spacing: 0.4px; }
 .product__img { width: 80px; }
 
-.programs { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.programs__el { margin-right: 30px; margin-bottom: 30px; }
+.programs { width: 100%; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+.programs__el { display: inline-block; margin-right: 30px; margin-bottom: 30px; }
 .programs__el:nth-child(8) { margin-right: 0; }
 .programs__el:last-child { margin-right: 0; }
 .programs__link { width: 42px; height: 42px; }
