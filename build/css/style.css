@@ -337,6 +337,8 @@ img { display: inline-block; width: 100%; }
 
 .copyright__descr { font-size: 14px; color: #fff; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 
+.logo { width: 170px; }
+
 .banner__name { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 6px; font-size: 10px; color: #68767d; font-family: "roboto-light", Helvetica, Arial, sans-serif; }
 
 .discussion { margin-top: 22px; margin-bottom: 60px; }
